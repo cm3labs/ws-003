@@ -8,25 +8,28 @@ ref: https://realpython.com/python-web-scraping-practical-introduction/
 **Tools to use**
 urllib
     - from python standard library
-    - contains toosl for working with URLS
+    - contains tools for working with URLS
 
     import urlopen()
-    ```python
+    ```
     from urllib.request import urlopen
 
     ```
 
     put landing(target) site into a variable
-    ```python
+    ```
     url = "http://olympus.realpython.org/profiles/aphrodite"
     ```
 
-    open the page by passing url into urlopen()
-    ```python
+    use urlopen()
+    ```
     page = urlopen(url)
     ```
 
-    
+string methods
+    - use variable.find("<element>")+len("<element>") to get start of where you want to pull text from
+    - use variable.find("</element>") to get where it ends
+    - take the start and end values (which you hopefully put in variables ...) and use slices (variable[start:end]) to extract code
 
 
 # Changelog:
